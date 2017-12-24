@@ -18,7 +18,7 @@ Conflicts:     fedora-release
 
 %description
 This package contains the Heretic oVirt Project (HVP) repository
-GPG key.
+GPG key and Yum files.
 
 %prep
 %setup -q  -c -T
