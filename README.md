@@ -1,6 +1,6 @@
 # Packages repository
 
-This repository will contain the files related to RPM packaging for the Heretic oVirt Project:
+This repository contains the files related to RPM packaging for the Heretic oVirt Project:
 
 HVP.repo - the RPM repository definitions for use with Yum
 
