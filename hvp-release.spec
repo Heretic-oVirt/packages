@@ -1,6 +1,6 @@
 Name:           hvp-release
 Version:        7
-Release:        1
+Release:        2
 Summary:        Heretic oVirt Project repository configuration
 
 Group:          System Environment/Base
@@ -49,5 +49,8 @@ rm -rf $RPM_BUILD_ROOT
 /etc/pki/rpm-gpg/*
 
 %changelog
+* Fri Jan 05 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 7-2
+- Updated HVP.repo to use $releasever
+
 * Sun Dec 24 2017 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 7-1
 - Initial release, borrowing spec from EPEL release package
