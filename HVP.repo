@@ -4,42 +4,42 @@
 
 [hvp-rhgs-rebuild]
 name=Heretic oVirt Project - RHGS partial rebuild
-baseurl=http://dangerous.ovirt.life/hvp-repos/el7/rhgs-rebuild/
+baseurl=http://dangerous.ovirt.life/hvp-repos/el$releasever/rhgs-rebuild/
 gpgcheck=1
 enabled=0
 gpgkey=https://dangerous.ovirt.life/hvp-repos/RPM-GPG-KEY-hvp
 
 [hvp-openvswitch-rebuild]
 name=Heretic oVirt Project - Latest OpenvSwitch/OVN packages rebuilt
-baseurl=http://dangerous.ovirt.life/hvp-repos/el7/openvswitch-rebuild/
+baseurl=http://dangerous.ovirt.life/hvp-repos/el$releasever/openvswitch-rebuild/
 gpgcheck=1
 enabled=0
 gpgkey=https://dangerous.ovirt.life/hvp-repos/RPM-GPG-KEY-hvp
 
 [hvp-bareos-rebuild]
 name=Heretic oVirt Project - Bareos packages rebuilt
-baseurl=http://dangerous.ovirt.life/hvp-repos/el7/bareos-rebuild/
+baseurl=http://dangerous.ovirt.life/hvp-repos/el$releasever/bareos-rebuild/
 gpgcheck=1
 enabled=1
 gpgkey=https://dangerous.ovirt.life/hvp-repos/RPM-GPG-KEY-hvp
 
 [hvp-fedora-rebuild]
 name=Heretic oVirt Project - Fedora partial rebuild
-baseurl=http://dangerous.ovirt.life/hvp-repos/el7/fedora-rebuild/
+baseurl=http://dangerous.ovirt.life/hvp-repos/el$releasever/fedora-rebuild/
 gpgcheck=1
 enabled=0
 gpgkey=https://dangerous.ovirt.life/hvp-repos/RPM-GPG-KEY-hvp
 
 [hvp]
 name=Heretic oVirt Project - Original packages
-baseurl=http://dangerous.ovirt.life/hvp-repos/el7/hvp/
+baseurl=http://dangerous.ovirt.life/hvp-repos/el$releasever/hvp/
 gpgcheck=1
 enabled=1
 gpgkey=https://dangerous.ovirt.life/hvp-repos/RPM-GPG-KEY-hvp
 
 [hvp-samba-dc]
 name=Heretic oVirt Project - Samba packages rebuilt for AD DC support
-baseurl=http://dangerous.ovirt.life/hvp-repos/el7/samba-dc/
+baseurl=http://dangerous.ovirt.life/hvp-repos/el$releasever/samba-dc/
 gpgcheck=1
 enabled=0
 gpgkey=https://dangerous.ovirt.life/hvp-repos/RPM-GPG-KEY-hvp
