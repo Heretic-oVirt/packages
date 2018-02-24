@@ -4,12 +4,12 @@
 %global repo		ansible
 # https://github.com/Heretic-oVirt/ansible
 %global provider_prefix	%{provider}.%{provider_tld}/%{project}/%{repo}
-%global commit		76fd0f13d1bb44a2c6378d074325ea925121b74d
+%global commit		8afb72b1004fe59e238d928c4ec58752e70aa6fd
 %global shortcommit	%(c=%{commit}; echo ${c:0:7})
 
 Name:		hvp-ansible
 Version:	0.1
-Release:	2.git%{shortcommit}%{?dist}
+Release:	3.git%{shortcommit}%{?dist}
 Summary:	Playbooks, roles, variables and scripts for Heretic oVirt Project
 Group:		Development/Libraries
 License:	GPLv2
@@ -37,6 +37,9 @@ cp -a hvp* %{buildroot}%{_datadir}/ansible/%{name}
 %{_datadir}/ansible/%{name}
 
 %changelog
+* Sat Feb 24 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 0.1.0-3.git8afb72b1004fe59e238d928c4ec58752e70aa6fd
+- Updated to latest commit
+
 * Sat Jan 27 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 0.1.0-2.git76fd0f13d1bb44a2c6378d074325ea925121b74d
 - Updated to latest commit
 
