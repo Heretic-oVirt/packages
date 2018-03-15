@@ -8,6 +8,6 @@ hvp-release.spec - the spec file to build the hvp-release RPM package
 
 hvp-ansible.spec - the spec file to build the hvp-ansible RPM package
 
-samba.spec - the spec file to build the samba RPM package
+samba.spec - the spec file to build the AD-DC-enabled samba RPM package
 
 RPM-GPG-KEY-hvp - the GPG publick key to verify the RPM packages
