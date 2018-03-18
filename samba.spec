@@ -8,7 +8,7 @@
 
 %define main_release 0.b
 
-%define samba_version 4.7.5
+%define samba_version 4.7.6
 %define talloc_version 2.1.9
 %define tdb_version 1.3.14
 %define tevent_version 0.9.34
@@ -2850,7 +2850,10 @@ rm -rf %{buildroot}
 %endif # with_clustering_support
 
 %changelog
-* Tue Dec 26 2017 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 4.7.5-0.b
+* Fri Mar 16 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 4.7.6-0.b
+- Update to Samba 4.7.6 final
+
+* Mon Feb 26 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 4.7.5-0.b
 - Update to Samba 4.7.5 final
 
 * Tue Dec 26 2017 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 4.7.4-0.b
