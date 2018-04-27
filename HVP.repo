@@ -2,6 +2,13 @@
 #
 # Please see http://dangerous.ovirt.life/hvp-docs/ for more information
 
+[hvp-rhv-rebuild]
+name=Heretic oVirt Project - RHV partial rebuild
+baseurl=http://dangerous.ovirt.life/hvp-repos/el$releasever/rhv-rebuild/
+gpgcheck=1
+enabled=0
+gpgkey=https://dangerous.ovirt.life/hvp-repos/RPM-GPG-KEY-hvp
+
 [hvp-rhgs-rebuild]
 name=Heretic oVirt Project - RHGS partial rebuild
 baseurl=http://dangerous.ovirt.life/hvp-repos/el$releasever/rhgs-rebuild/
@@ -10,7 +17,7 @@ enabled=0
 gpgkey=https://dangerous.ovirt.life/hvp-repos/RPM-GPG-KEY-hvp
 
 [hvp-openvswitch-rebuild]
-name=Heretic oVirt Project - Latest OpenvSwitch/OVN packages rebuilt
+name=Heretic oVirt Project - Newer OpenvSwitch/OVN packages
 baseurl=http://dangerous.ovirt.life/hvp-repos/el$releasever/openvswitch-rebuild/
 gpgcheck=1
 enabled=0
@@ -26,6 +33,13 @@ gpgkey=https://dangerous.ovirt.life/hvp-repos/RPM-GPG-KEY-hvp
 [hvp-fedora-rebuild]
 name=Heretic oVirt Project - Fedora partial rebuild
 baseurl=http://dangerous.ovirt.life/hvp-repos/el$releasever/fedora-rebuild/
+gpgcheck=1
+enabled=0
+gpgkey=https://dangerous.ovirt.life/hvp-repos/RPM-GPG-KEY-hvp
+
+[hvp-rhsat-rebuild]
+name=Heretic oVirt Project - RH Satellite partial rebuild
+baseurl=http://dangerous.ovirt.life/hvp-repos/el$releasever/rhsat-rebuild/
 gpgcheck=1
 enabled=0
 gpgkey=https://dangerous.ovirt.life/hvp-repos/RPM-GPG-KEY-hvp
