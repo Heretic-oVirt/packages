@@ -1,6 +1,6 @@
 Name:           hvp-release
 Version:        7
-Release:        2
+Release:        3
 Summary:        Heretic oVirt Project repository configuration
 
 Group:          System Environment/Base
@@ -13,7 +13,7 @@ Source2:        HVP.repo
 
 BuildArch:     noarch
 Requires:      redhat-release >=  %{version}
-# hvp-release is only for enterprise linux, not fedora
+# hvp-release is only for Enterprise Linux, not Fedora
 Conflicts:     fedora-release
 
 %description
@@ -49,6 +49,9 @@ rm -rf $RPM_BUILD_ROOT
 /etc/pki/rpm-gpg/*
 
 %changelog
+* Fri Apr 27 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 7-3
+- Updated HVP.repo to list RHV and Satellite partial rebuild repos
+
 * Fri Jan 05 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 7-2
 - Updated HVP.repo to use $releasever
 
