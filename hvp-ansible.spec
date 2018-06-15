@@ -9,7 +9,7 @@
 
 Name:		hvp-ansible
 Version:	0.1
-Release:	4.git%{shortcommit}%{?dist}
+Release:	5.git%{shortcommit}%{?dist}
 Summary:	Playbooks, roles, variables and scripts for Heretic oVirt Project
 Group:		Development/Libraries
 License:	GPLv2
@@ -18,7 +18,9 @@ Source0:	https://%{provider_prefix}/archive/%{commit}/%{repo}-%{shortcommit}.tar
 
 BuildArch:	noarch
 
-Requires:       ansible
+Requires:   ansible >= 2.4
+Requires:   python2-jmespath python-netaddr python-dns python-psycopg2 libselinux-python libsemanage-python NetworkManager-glib
+Requires:   gdeploy ovirt-engine-sdk-python ovirt-ansible-roles
 
 %description
 This package contains the Ansible files used for Heretic oVirt Project final configuration automation.
@@ -37,6 +39,9 @@ cp -a hvp* %{buildroot}%{_datadir}/ansible/%{name}
 %{_datadir}/ansible/%{name}
 
 %changelog
+* Thu Jun 14 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 0.1.0-5.git35e5963529bb7265623762c6c6b928938c553570
+- Updated package dependencies
+
 * Sun Feb 25 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 0.1.0-4.git35e5963529bb7265623762c6c6b928938c553570
 - Updated to latest commit
 
