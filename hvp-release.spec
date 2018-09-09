@@ -1,6 +1,6 @@
 Name:           hvp-release
 Version:        7
-Release:        3
+Release:        4
 Summary:        Heretic oVirt Project repository configuration
 
 Group:          System Environment/Base
@@ -49,6 +49,9 @@ rm -rf $RPM_BUILD_ROOT
 /etc/pki/rpm-gpg/*
 
 %changelog
+* Fri Apr 27 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 7-4
+- Updated HVP.repo to use all HTTPS URLs
+
 * Fri Apr 27 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 7-3
 - Updated HVP.repo to list RHV and Satellite partial rebuild repos
 
