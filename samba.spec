@@ -8,10 +8,10 @@
 
 %define main_release 0.b
 
-%define samba_version 4.7.6
+%define samba_version 4.7.10
 %define talloc_version 2.1.9
 %define tdb_version 1.3.14
-%define tevent_version 0.9.34
+%define tevent_version 0.9.36
 %define ldb_version 1.2.3
 # This should be rc5 or nil
 %define pre_release %{nil}
@@ -885,7 +885,6 @@ filenames=$(echo "
     remove_dc.py
     sites.py
     subnets.py
-    tests/auth_log.py
     tests/auth_log_base.py
     tests/auth_log_pass_change.py
     tests/blackbox/ndrdump.py
@@ -2621,6 +2620,7 @@ rm -rf %{buildroot}
 %{_datadir}/ctdb/tests/simple/76_ctdb_pdb_recovery.sh
 %{_datadir}/ctdb/tests/simple/77_ctdb_db_recovery.sh
 %{_datadir}/ctdb/tests/simple/78_ctdb_large_db_recovery.sh
+%{_datadir}/ctdb/tests/simple/79_volatile_db_traverse.sh
 %{_datadir}/ctdb/tests/simple/80_ctdb_traverse.sh
 %{_datadir}/ctdb/tests/simple/99_daemons_shutdown.sh
 %{_datadir}/ctdb/tests/simple/functions
@@ -2850,6 +2850,11 @@ rm -rf %{buildroot}
 %endif # with_clustering_support
 
 %changelog
+* Fri Sep 07 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 4.7.10-0.b
+- Update to Samba 4.7.10 final
+- Removed tests/auth_log.py from Python3 syntax checks
+- Added CTDB simple test 79_volatile_db_traverse.sh
+
 * Fri Mar 16 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 4.7.6-0.b
 - Update to Samba 4.7.6 final
 
