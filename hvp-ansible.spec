@@ -4,12 +4,12 @@
 %global repo		ansible
 # https://github.com/Heretic-oVirt/ansible
 %global provider_prefix	%{provider}.%{provider_tld}/%{project}/%{repo}
-%global commit		667432a7bce801a6b0046cb97f07288cc3ea0eeb
+%global commit		0e9585947b67accd0aaf8565fcd08b9d1e64dd1f
 %global shortcommit	%(c=%{commit}; echo ${c:0:7})
 
 Name:		hvp-ansible
 Version:	0.1
-Release:	7.git%{shortcommit}%{?dist}
+Release:	8.git%{shortcommit}%{?dist}
 Summary:	Playbooks, roles, variables and scripts for Heretic oVirt Project
 Group:		Development/Libraries
 License:	GPLv2
@@ -19,7 +19,7 @@ Source0:	https://%{provider_prefix}/archive/%{commit}/%{repo}-%{shortcommit}.tar
 BuildArch:	noarch
 
 Requires:   ansible >= 2.4
-Requires:   python2-jmespath python-netaddr python-dns python-psycopg2 libselinux-python libsemanage-python NetworkManager-glib
+Requires:   python2-jmespath python-netaddr python-dns python-psycopg2 libselinux-python libsemanage-python NetworkManager-glib python-passlib
 Requires:   gdeploy ovirt-engine-sdk-python ovirt-ansible-roles
 
 %description
@@ -39,6 +39,9 @@ cp -a hvp* %{buildroot}%{_datadir}/ansible/%{name}
 %{_datadir}/ansible/%{name}
 
 %changelog
+* Fri Sep 21 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 0.1.0-8.git0e9585947b67accd0aaf8565fcd08b9d1e64dd1f
+- Updated to latest commit
+
 * Sat Sep 08 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 0.1.0-7.git667432a7bce801a6b0046cb97f07288cc3ea0eeb
 - Updated to latest commit
 
