@@ -44,6 +44,13 @@ gpgcheck=1
 enabled=0
 gpgkey=https://dangerous.ovirt.life/hvp-repos/RPM-GPG-KEY-hvp
 
+[hvp-ansible-rebuild]
+name=Heretic oVirt Project - RH Ansible partial rebuild
+baseurl=https://dangerous.ovirt.life/hvp-repos/el$releasever/ansible-rebuild/
+gpgcheck=1
+enabled=0
+gpgkey=https://dangerous.ovirt.life/hvp-repos/RPM-GPG-KEY-hvp
+
 [hvp]
 name=Heretic oVirt Project - Original packages
 baseurl=https://dangerous.ovirt.life/hvp-repos/el$releasever/hvp/
