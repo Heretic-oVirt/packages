@@ -8,7 +8,7 @@
 
 %define main_release 0.b
 
-%define samba_version 4.7.10
+%define samba_version 4.7.12
 %define talloc_version 2.1.9
 %define tdb_version 1.3.14
 %define tevent_version 0.9.36
@@ -2850,6 +2850,12 @@ rm -rf %{buildroot}
 %endif # with_clustering_support
 
 %changelog
+* Tue Jan 08 2019 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 4.7.12-0.b
+- Update to Samba 4.7.12 final
+
+* Thu Nov 01 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 4.7.11-0.b
+- Update to Samba 4.7.11 final
+
 * Fri Sep 07 2018 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 4.7.10-0.b
 - Update to Samba 4.7.10 final
 - Removed tests/auth_log.py from Python3 syntax checks
