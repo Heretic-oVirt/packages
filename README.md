@@ -10,4 +10,6 @@ hvp-ansible.spec - the spec file to build the hvp-ansible RPM package
 
 samba.spec - the spec file to build the AD-DC-enabled samba RPM package
 
+glusterfs-gnfs.spec - the spec file to build the dummy gNFS subpackage for the RHGS version of GlusterFS
+
 RPM-GPG-KEY-hvp - the GPG publick key to verify the RPM packages
