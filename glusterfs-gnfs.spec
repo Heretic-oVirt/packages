@@ -1,6 +1,6 @@
 Name:             glusterfs-gnfs
 Version:          3.12.2
-Release:          40%{?dist}
+Release:          47.4%{?dist}
 License:          GPLv2 or LGPLv3+
 URL:              http://gluster.readthedocs.io/en/latest/
 Summary:          GlusterFS gNFS server
@@ -23,8 +23,18 @@ server subpackage).
 %files
 
 %changelog
+* Fri Aug 23 2019 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 3.12.2-47.4
+- Updated package release to latest RHGS 3.4.x
+
+* Sun Jun 16 2019 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 3.12.2-47.2
+- Updated package release to latest RHGS 3.4.x
+
+* Tue Apr 02 2019 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 3.12.2-47
+- Updated package release to latest RHGS 3.4.x
+
 * Tue Feb 12 2019 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 3.12.2-40
 - Updated package release to latest RHGS 3.4.x
 
 * Sat Jan 12 2019 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 3.12.2-32
 - Created package to satisfy dependencies while using RHGS 3.4
+
