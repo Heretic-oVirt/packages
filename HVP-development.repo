@@ -1,0 +1,66 @@
+# Heretic oVirt Project repo - development version
+#
+# Please see https://dangerous.ovirt.life/hvp-docs/ for more information
+
+[hvp-rhv-rebuild]
+name=Heretic oVirt Project - RHV partial rebuild
+baseurl=https://dangerous.ovirt.life/hvp-repos-development/el$releasever/rhv-rebuild/
+gpgcheck=1
+enabled=0
+gpgkey=https://dangerous.ovirt.life/hvp-repos-development/RPM-GPG-KEY-hvp
+
+[hvp-rhgs-rebuild]
+name=Heretic oVirt Project - RHGS partial rebuild
+baseurl=https://dangerous.ovirt.life/hvp-repos-development/el$releasever/rhgs-rebuild/
+gpgcheck=1
+enabled=0
+gpgkey=https://dangerous.ovirt.life/hvp-repos-development/RPM-GPG-KEY-hvp
+
+[hvp-openvswitch-rebuild]
+name=Heretic oVirt Project - Newer OpenvSwitch/OVN packages
+baseurl=https://dangerous.ovirt.life/hvp-repos-development/el$releasever/openvswitch-rebuild/
+gpgcheck=1
+enabled=0
+gpgkey=https://dangerous.ovirt.life/hvp-repos-development/RPM-GPG-KEY-hvp
+
+[hvp-bareos-rebuild]
+name=Heretic oVirt Project - Bareos packages rebuilt
+baseurl=https://dangerous.ovirt.life/hvp-repos-development/el$releasever/bareos-rebuild/
+gpgcheck=1
+enabled=1
+gpgkey=https://dangerous.ovirt.life/hvp-repos-development/RPM-GPG-KEY-hvp
+
+[hvp-fedora-rebuild]
+name=Heretic oVirt Project - Fedora partial rebuild
+baseurl=https://dangerous.ovirt.life/hvp-repos-development/el$releasever/fedora-rebuild/
+gpgcheck=1
+enabled=0
+gpgkey=https://dangerous.ovirt.life/hvp-repos-development/RPM-GPG-KEY-hvp
+
+[hvp-rhsat-rebuild]
+name=Heretic oVirt Project - RH Satellite partial rebuild
+baseurl=https://dangerous.ovirt.life/hvp-repos-development/el$releasever/rhsat-rebuild/
+gpgcheck=1
+enabled=0
+gpgkey=https://dangerous.ovirt.life/hvp-repos-development/RPM-GPG-KEY-hvp
+
+[hvp-ansible-rebuild]
+name=Heretic oVirt Project - RH Ansible partial rebuild
+baseurl=https://dangerous.ovirt.life/hvp-repos-development/el$releasever/ansible-rebuild/
+gpgcheck=1
+enabled=0
+gpgkey=https://dangerous.ovirt.life/hvp-repos-development/RPM-GPG-KEY-hvp
+
+[hvp]
+name=Heretic oVirt Project - Original packages
+baseurl=https://dangerous.ovirt.life/hvp-repos-development/el$releasever/hvp/
+gpgcheck=1
+enabled=1
+gpgkey=https://dangerous.ovirt.life/hvp-repos-development/RPM-GPG-KEY-hvp
+
+[hvp-samba-dc]
+name=Heretic oVirt Project - Samba packages rebuilt for AD DC support
+baseurl=https://dangerous.ovirt.life/hvp-repos-development/el$releasever/samba-dc/
+gpgcheck=1
+enabled=0
+gpgkey=https://dangerous.ovirt.life/hvp-repos-development/RPM-GPG-KEY-hvp
