@@ -4,21 +4,21 @@
 %global repo		ansible
 # https://github.com/Heretic-oVirt/ansible
 %global provider_prefix	%{provider}.%{provider_tld}/%{project}/%{repo}
-%global commit		3d35bbd8090e30bbafba1654328897e2fbdd1c79
+%global commit		a3b7239b6812f9e97f6d05389fff08e9de8c0636
 %global shortcommit	%(c=%{commit}; echo ${c:0:7})
 
 Name:		hvp-ansible
 Version:	0.2
-Release:	0.git%{shortcommit}%{?dist}
+Release:	3.git%{shortcommit}%{?dist}
 Summary:	Playbooks, roles, variables and scripts for Heretic oVirt Project
 Group:		Development/Libraries
 License:	GPLv2
 URL:		https://%{provider_prefix}
-Source0:	https://%{provider_prefix}/archive/%{commit}/%{repo}-%{shortcommit}.tar.gz
+Source0:	https://%{provider_prefix}/tarball/%{shortcommit}/%{project}-%{repo}-%{shortcommit}.tar.gz
 
 BuildArch:	noarch
 
-Requires:   ansible >= 2.5
+Requires:   ansible >= 2.8
 Requires:   python2-jmespath python-netaddr python-dns python-psycopg2 libselinux-python libsemanage-python NetworkManager-glib python-passlib
 Requires:   gdeploy ovirt-engine-sdk-python ovirt-ansible-roles
 
@@ -26,7 +26,7 @@ Requires:   gdeploy ovirt-engine-sdk-python ovirt-ansible-roles
 This package contains the Ansible files used for Heretic oVirt Project final configuration automation.
 
 %prep
-%setup -q -n %{repo}-%{commit}
+%setup -q -n %{project}-%{repo}-%{shortcommit}
 
 %build
 
@@ -39,6 +39,17 @@ cp -a hvp* %{buildroot}%{_datadir}/ansible/%{name}
 %{_datadir}/ansible/%{name}
 
 %changelog
+* Sun Jan 19 2020 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 0.2.0-3.gita3b7239b6812f9e97f6d05389fff08e9de8c0636
+- Updated to latest commit
+
+* Sat Jan 18 2020 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 0.2.0-2.git68fff6e36a9d68b2d4d17e78a47464aa166a5e6c
+- Updated to latest commit
+
+* Sun Sep 29 2019 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 0.2.0-1.git0f0cdc5d0df952ecc0b172a80e3cc2fd8f6fc573
+- Updated to latest commit
+- Updated minimum required Ansible version
+- Generalized source URL to work also for non-master braches
+
 * Thu Feb 14 2019 Giuseppe Ragusa <giuseppe.ragusa@fastmail.fm> - 0.2.0-0.git3d35bbd8090e30bbafba1654328897e2fbdd1c79
 - Updated to latest commit
 - Updated minimum required Ansible version
